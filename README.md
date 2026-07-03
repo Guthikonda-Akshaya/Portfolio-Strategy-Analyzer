@@ -49,7 +49,7 @@ The application allows users to create a custom investment portfolio by selectin
 
 ## Live Demo
 
-🚀 **[Launch Portfolio Rebalancing Analysis](https://portfolio-rebalancing-analysis.streamlit.app/)**
+ **[Launch Portfolio Rebalancing Analysis](https://portfolio-rebalancing-analysis.streamlit.app/)**
 
 ---
 
