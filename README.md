@@ -1,10 +1,10 @@
 # Portfolio Rebalancing Analysis
 
-A student finance project built with Streamlit that compares three
+A finance project built with Streamlit that compares three
 portfolio rebalancing strategies using real historical stock/ETF price
 data from Yahoo Finance.
 
-This project was built as an academic exercise to demonstrate portfolio
+This project was built  to demonstrate portfolio
 management concepts, basic financial analytics, and Python programming.
 It is intentionally kept simple rather than production-grade, so that
 every function can be explained line-by-line.
@@ -50,7 +50,7 @@ performance metrics and charts.
 
 ## Live Demo
 
- **[Launch Portfolio Strategy Analyzer](https://portfolio-rebalancing-analysis.streamlit.app/)**
+**[Launch Portfolio Rebalancing Analysis](https://portfolio-rebalancing-analysis.streamlit.app/)**
 
 ### Using the App
 
