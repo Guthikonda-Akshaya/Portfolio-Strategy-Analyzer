@@ -1,4 +1,4 @@
-# Portfolio Rebalancing Simulator
+# Portfolio Rebalancing Analysis
 
 A student finance project built with Streamlit that compares three
 portfolio rebalancing strategies using real historical stock/ETF price
@@ -50,7 +50,7 @@ performance metrics and charts.
 
 ## Live Demo
 
-🚀 **[Launch Portfolio Strategy Analyzer](https://portfolio-strategy-analyzer-gvozm8hme2mlvtnxxgj5wd.streamlit.app/)**
+ **[Launch Portfolio Strategy Analyzer](https://portfolio-rebalancing-analysis.streamlit.app/)**
 
 ### Using the App
 
