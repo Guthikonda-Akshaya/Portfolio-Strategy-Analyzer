@@ -1,87 +1,100 @@
 # Portfolio Rebalancing Analysis
 
-A finance project built with Streamlit that compares three
-portfolio rebalancing strategies using real historical stock/ETF price
-data from Yahoo Finance.
+A finance project built with **Python** and **Streamlit** to compare three portfolio rebalancing strategies using historical stock and ETF price data from **Yahoo Finance**.
 
-This project was built  to demonstrate portfolio
-management concepts, basic financial analytics, and Python programming.
-It is intentionally kept simple rather than production-grade, so that
-every function can be explained line-by-line.
+The project demonstrates core portfolio management concepts, portfolio performance evaluation, and financial data visualization through an interactive web application.
+
+---
 
 ## Project Overview
 
-Given a set of tickers, target weights, and a date range, the app
-simulates how a portfolio would have performed under three different
-rebalancing approaches, then compares them side by side using
-performance metrics and charts.
+The application allows users to create a custom investment portfolio by selecting stock or ETF tickers, assigning target weights, and choosing a historical time period. It then simulates the portfolio under three different rebalancing strategies and compares their performance using standard financial metrics and interactive visualizations.
+
+---
 
 ## Features
 
-- Enter any combination of stock/ETF tickers and target weights
-- Automatic validation that weights sum to 100%
-- Historical adjusted closing price download via `yfinance`
-- Graceful handling of invalid or delisted tickers
-- Three rebalancing strategies:
-  - **Buy & Hold** — invest once, never rebalance
-  - **Calendar Rebalancing** — rebalance monthly, quarterly, or yearly
-  - **Threshold Rebalancing** — rebalance whenever any asset drifts
-    beyond a chosen percentage from its target weight
-- Six performance metrics per strategy:
+- Create custom portfolios using stock and ETF tickers
+- Validate portfolio weights before simulation
+- Download historical market data using **Yahoo Finance**
+- Handle invalid or unavailable ticker symbols gracefully
+- Compare three portfolio rebalancing strategies:
+  - **Buy & Hold** – Invest once and never rebalance
+  - **Calendar Rebalancing** – Rebalance monthly, quarterly, or yearly
+  - **Threshold Rebalancing** – Rebalance when an asset's weight exceeds a specified drift threshold
+- Evaluate portfolio performance using:
   - Final Portfolio Value
   - Total Return
   - Annualized Return
   - Annualized Volatility
-  - Sharpe Ratio (risk-free rate assumed to be 0)
+  - Sharpe Ratio
   - Maximum Drawdown
-- Three Plotly visualizations:
-  - Portfolio Value Over Time (all strategies)
-  - Risk vs Return Comparison (scatter plot)
-  - Portfolio Allocation Over Time (stacked area chart, for a chosen strategy)
+- Interactive visualizations for:
+  - Portfolio Value Over Time
+  - Risk vs Return Comparison
+  - Portfolio Allocation Over Time
+
+---
 
 ## Technologies
 
-- Python 3
-- Streamlit — user interface
-- Pandas — data handling and time series calculations
-- NumPy — numerical calculations
-- Plotly — interactive charts
-- yfinance — historical stock price data
+- Python
+- Streamlit
+- Pandas
+- NumPy
+- Plotly
+- yfinance
+
+---
 
 ## Live Demo
 
-**[Launch Portfolio Rebalancing Analysis](https://portfolio-rebalancing-analysis.streamlit.app/)**
+🚀 **[Launch Portfolio Rebalancing Analysis](https://portfolio-rebalancing-analysis.streamlit.app/)**
 
-### Using the App
+---
 
-1. In the sidebar, enter comma-separated tickers (e.g. `AAPL, MSFT, GOOGL`).
-2. Enter comma-separated weights that sum to 100 (e.g. `40, 30, 30`).
-3. Choose a start date, end date, and initial investment amount.
-4. Choose a calendar rebalancing frequency and a threshold percentage.
-5. Click **Simulate** to download data, run all three strategies, and
-   view the metrics table and charts.
+## Using the Application
+
+1. Enter stock or ETF tickers (comma separated).
+2. Enter the corresponding portfolio weights (must sum to 100%).
+3. Select the analysis period.
+4. Choose the calendar rebalancing frequency.
+5. Select the threshold percentage for threshold rebalancing.
+6. Click **Simulate** to compare all three strategies.
+
+---
 
 ## Project Structure
 
-```
-portfolio_sim/
-├── app.py        # Main Streamlit application (all logic in one file)
-└── README.md      # Project documentation
+```text
+.
+├── app.py
+├── requirements.txt
+└── README.md
 ```
 
-## Limitations / Assumptions
+---
 
-- Transaction costs and taxes are not modeled.
-- The risk-free rate is assumed to be 0% for the Sharpe Ratio.
-- Rebalancing is assumed to happen instantly at the closing price with
-  no slippage.
-- Dividends are only included to the extent that `yfinance`'s adjusted
-  close price reflects them.
+## Assumptions
+
+- Transaction costs and taxes are not considered.
+- The risk-free rate is assumed to be **0%** while computing the Sharpe Ratio.
+- Rebalancing is assumed to occur instantly at the closing price.
+- Historical prices are obtained from Yahoo Finance.
+
+---
 
 ## Future Improvements
 
-- Add transaction cost assumptions to rebalancing strategies
-- Allow a custom, user-defined risk-free rate for the Sharpe Ratio
-- Add the ability to compare more than one calendar frequency at once
-- Add a benchmark comparison (e.g. S&P 500)
-- Allow saving/exporting simulation results
+- Include transaction costs during rebalancing
+- Allow a user-defined risk-free rate
+- Compare multiple calendar rebalancing frequencies simultaneously
+- Add benchmark comparison (e.g., S&P 500)
+- Export portfolio performance reports
+
+---
+
+## Acknowledgements
+
+- Historical market data provided by **Yahoo Finance**
+- Built using **Streamlit**, **Plotly**, and the **Python** data science ecosystem.
