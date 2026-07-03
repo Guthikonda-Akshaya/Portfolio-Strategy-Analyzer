@@ -48,24 +48,9 @@ performance metrics and charts.
 - Plotly — interactive charts
 - yfinance — historical stock price data
 
-## Installation
+## Live Demo
 
-1. Make sure Python 3.9+ is installed.
-2. Install the required libraries:
-
-```bash
-pip install streamlit pandas numpy plotly yfinance
-```
-
-## How to Run
-
-From the project folder, run:
-
-```bash
-streamlit run app.py
-```
-
-This will open the app in your browser (usually at `http://localhost:8501`).
+🚀 **[Launch Portfolio Strategy Analyzer](https://portfolio-strategy-analyzer-gvozm8hme2mlvtnxxgj5wd.streamlit.app/)**
 
 ### Using the App
 
